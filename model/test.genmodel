@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/sds4emf/gen/test/java" modelPluginID="sds4emf"
+    modelName="Test" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>test.ecore</foreignModel>
+  <genPackages prefix="TestModel" disposableProviderFactory="true" ecorePackage="test.ecore#/">
+    <genClasses ecoreClass="test.ecore#//AClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute test.ecore#//AClass/AClassAttr1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute test.ecore#//AClass/AClassAttr2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference test.ecore#//AClass/AClassRef1"/>
+    </genClasses>
+    <genClasses ecoreClass="test.ecore#//BClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute test.ecore#//BClass/BClassAttr1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute test.ecore#//BClass/BClassAttr2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference test.ecore#//BClass/BClassRef1"/>
+    </genClasses>
+    <genClasses ecoreClass="test.ecore#//CClass">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute test.ecore#//CClass/CClassAttr1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute test.ecore#//CClass/CClassAttr2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference test.ecore#//CClass/CClassRef1"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
