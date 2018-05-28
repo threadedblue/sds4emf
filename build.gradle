@@ -1,22 +1,26 @@
 apply plugin: 'java-library'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+group = 'iox.emf'
+version = '0.0.1'
+
 configure(install.repositories.mavenInstaller) {
     pom.project {
-        groupId 'iox.emf'
+        groupId group
         artifactId 'sds4emf'
         inceptionYear '2017'
         packaging 'jar'
     }
 }
 
-sourceCompatibility = 1.8
-version = '0.0.1'
-
 repositories {
-    maven {url 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath;}
-    jcenter()
+//    maven {url 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath;}
+	mavenCentral()
+	mavenLocal()
 }
+
 sourceSets {
     main {
         java {
@@ -31,11 +35,6 @@ sourceSets {
            srcDirs 'src/test/resources'
          }
     }
-}
-
-test {
-    dependsOn cleanTest
-    testLogging.showStandardStreams = true
 }
 
  jar {

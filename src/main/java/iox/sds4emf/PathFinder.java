@@ -83,4 +83,8 @@ public class PathFinder {
 		}
 		return idx;
 	}
+	
+	public static void main(String[] args) {
+		
+	}
 }
